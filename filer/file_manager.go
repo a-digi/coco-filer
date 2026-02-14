@@ -14,12 +14,10 @@ type File struct {
 	MimeType string
 }
 
-// FileManager kapselt Dateioperationen wie Speichern und Verschieben.
 type FileManager struct {
 	DefaultDir string
 }
 
-// NewFileManager erstellt einen neuen FileManager mit Standardverzeichnis (z.B. ./uploads).
 func NewFileManager(defaultDir string) *FileManager {
 
 	if defaultDir == "" {

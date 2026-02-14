@@ -8,7 +8,6 @@ import (
 	"path/filepath"
 )
 
-// Factory-Funktion für FileMultiPartManager
 func NewFileMultiPartManager(defaultDir string) *FileMultiPartManager {
 	return &FileMultiPartManager{FileManager: NewFileManager(defaultDir)}
 }
